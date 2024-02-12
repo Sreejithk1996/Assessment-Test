@@ -8,6 +8,8 @@ body {
     font-stretch:extra-expanded;
 }
 
+/* Header Section Css */
+
 .site-header {
     background-color: #f8cb2e;
     display: flex;
@@ -28,6 +30,8 @@ body {
     position: relative;
     height: 725px;
 }
+
+/* Nav Section Css */
 
 .navbar {
     height: 80px;
@@ -83,6 +87,8 @@ body {
     cursor: pointer;
 }
 
+/* Video Section Css */
+
 .bg-video video{
     object-fit: cover;
     width: 100%;
@@ -91,6 +97,8 @@ body {
     top: 0;
     z-index: -10;
 }
+
+/* Banner Section Css */
 
 .banner .banner-content {
     height: 645px;
@@ -162,4 +170,23 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.banner-2 .social .facebook:hover, .banner-2 .social .twitter:hover, .banner-2 .social .instagram:hover{
+    cursor: pointer;
+    background-color: #f8cb2e;
+}
+
+.banner-2 .social .facebook:hover i , .banner-2 .social .twitter:hover i , .banner-2 .social .instagram:hover i {
+    animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+   
+    100% {
+        transform: rotate(360deg);
+    }
 }
